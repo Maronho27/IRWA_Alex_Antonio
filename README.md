@@ -21,3 +21,19 @@ library if they do not have any of them installed.
 
 Finally, teachers must introduce a query at the last cell of the section "Print the ranked documents for a given query" or otherwise the
 code will not finish the execution.
+
+---------------------------------------------------------------------------------------------------------------------------------------
+
+For this third part of the project, we have reused again some cell of code from previous
+parts of the project (load datasets, text pre-processing and index creation from the first
+part of the project and tf-idf ranking and selection of queries from the second part of
+the project). Again, just mention that we have decided to copy this cells in the part 3
+Google Colab file, instead of make the teachers coordinate the different files of the 
+three parts of the project for obtaining the results, what would have been much more 
+complicated.
+
+Apart from this we want to comment that teachers running our code would need to save the 
+datasets of the first lab in the drive directory:
+drive/MyDrive/IRWA/Part_1:Text_Processing/Hurricane_Ian_Corpus/data/ and that they must 
+accept mounting the drive and install any imported library if they do not have any of them
+installed, or otherwise, the code would crack at some point.
