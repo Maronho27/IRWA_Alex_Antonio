@@ -37,3 +37,19 @@ datasets of the first lab in the drive directory:
 drive/MyDrive/IRWA/Part_1:Text_Processing/Hurricane_Ian_Corpus/data/ and that they must 
 accept mounting the drive and install any imported library if they do not have any of them
 installed, or otherwise, the code would crack at some point.
+
+---------------------------------------------------------------------------------------------------------------------------------------
+
+For this fourth part of the project, we have a total of 7 Python files, 3 CSS files and 8
+HTML files, so due to this, our teachers should download all of them before executing our
+code. Apart from that they also need to download the JSON where we have our tweets and the
+CSV with the name of the tweets. Apart from that, for running our code the teachers would
+need to run the Python file IRWA-2022-part.py which is our equivalent to the web_app.py
+file that they provided us, and search in their browser localhost:8088 in order to see our
+web application. Apart from that, once they have searched localhost:8088 in their browser
+our inverted index, tf, df and idf would be created, and due to this they would need to 
+wait a couple of minutes before seeing something in our webpage and creation the inverted
+index, the tf, the df and the idf takes a time.
+
+Apart from this, our teachers should install all the imported dictionaries used during the
+lab as otherwise the code would crack at some point.

@@ -1,0 +1,75 @@
+{% extends "base.html" %}
+{% block page_title %}{{ page_title }}{% endblock %}
+{% block content %}
+    <h2>Quick Stats</h2>
+    <h4>Clicked docs:</h4>
+
+    {% for doc in clicks_data[0] %}
+        <div class="pb-3">
+            <div class="">
+                <span class="text-dark"> ({{ doc.count }} visits) </span> — id: {{ doc.id }} — {{ doc.description }}
+            </div>
+        </div>
+        <hr>
+    {% endfor %}
+    
+    <h4>Searched queries:</h4>
+    {% for query in clicks_data[1] %}
+        <div class="pb-3">
+            <div class="">
+                <span class="text-dark"> Query: {{query.query}} </span> — times searched: {{ query.value }}
+            </div>
+        </div>
+        <hr>
+    {% endfor %}
+
+    <h4>Searched terms:</h4>
+    {% for term in clicks_data[2] %}
+        <div class="pb-3">
+            <div class="">
+                <span class="text-dark"> Term: {{term.term}} </span> — times searched: {{ term.value }}
+            </div>
+        </div>
+        <hr>
+    {% endfor %}
+
+    <h4>Information of the document, query and ranking selected:</h4>
+    {% for ranking in clicks_data[5] %}
+        <div class="pb-3">
+            <div class="">
+                <span class="text-dark"> The document: "{{ranking.document}}" was selected for the query: "{{ranking.query}}" which was at rank: {{ranking.ranking}}, {{ranking.value}} times
+            </div>
+        </div>
+        <hr>
+    {% endfor %}
+
+    <h4>Number of times that a rank has been selected:</h4>
+    {% for ranking in clicks_data[6] %}
+        <div class="pb-3">
+            <div class="">
+                <span class="text-dark"> The ranking: {{ranking.ranking}} has been selected {{ranking.value}} times
+            </div>
+        </div>
+        <hr>
+    {% endfor %}
+
+    <h4>Queries for this session:</h4>
+    {% for session in clicks_data[3] %}
+        <div class="pb-3">
+            <div class="">
+                <span class="text-dark"> Session {{session.session_id}} </span> had {{ session.number_queries }} queries which were {{ session.queries }}
+            </div>
+        </div>
+        <hr>
+    {% endfor %}
+
+    <h4>Queries for this mission:</h4>
+    {% for mission in clicks_data[4] %}
+        <div class="pb-3">
+            <div class="">
+                <span class="text-dark"> Mission {{mission.mission_id}} </span> had {{ mission.number_queries }} queries which were {{ mission.queries }}
+            </div>
+        </div>
+        <hr>
+    {% endfor %}
+{% endblock %}

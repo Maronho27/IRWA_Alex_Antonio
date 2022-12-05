@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document Detail - IRWA Search Engine</title>
+</head>
+<body>
+
+<h4>Document Information:</h4>
+<div class="pb-3">
+    <div class="">
+        <span class="text-dark"> ({{ doc.title }}) </span> — id: {{ doc.id }} — description : {{ doc.description }} - date : {{doc.doc_date}} - number of likes : {{doc.likes}} - number of retweets : {{doc.retweets}} - url : {{doc.url}} - hashtags : {{doc.hashtags}}
+    </div>
+</div>
+
+<h4>What do you want to do now?:</h4>
+<div><a href="#" onclick="history.go(-1)">Go Back</a></div>
+<div><a href="#" onclick="history.go(-2)">Go Back 2 pages</a></div>
+<div><a href="#" onclick="history.go(-3)">Go Back 3 pages</a></div>
+<div><a href="#" onclick="history.go(-4)">Go Back 4 pages</a></div>
+<div><a href="/stats" >Stats</a></div>
+<div><a href="/dashboard" >Dashboard</a></div>
+</body>
+</html>
